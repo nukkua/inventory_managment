@@ -8,8 +8,8 @@ body {
   padding: 0;
 }
 
-.container {
-  display: block;
+.view{
+  display: flex;
 }
 
 .login-text-container h1 {
@@ -77,17 +77,21 @@ body {
   top: 713px;
   background: #f9a63a;
   border-radius: 100px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 32px;
 }
 
+.draw-container {
+  position: absolute;
+  background-color: aqua;
+}
 
 .draw-container img {
-  position:unset;
-  left: 62.12%;
+  position: absolute;
+  left: 852px;
   right: 18.39%;
   top: 13.9%;
   bottom: 61.37%;
@@ -104,7 +108,6 @@ body {
   left: 812.42px;
   top: 250px;
 
-  background-color: #ff0000;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   transform: skewY(-10deg);
