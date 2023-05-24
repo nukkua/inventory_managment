@@ -1,0 +1,112 @@
+body {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+}
+
+.login-text-container h1 {
+  position: absolute;
+  width: 421px;
+  height: 149px;
+  left: 275px;
+  top: 150px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 116px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 484px;
+  height: 83px;
+  left: 156px;
+  top: 406px;
+  color: #a09e9e;
+  background: #d9d9d9;
+  border-radius: 100px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.username:focus {
+  color: #242424;
+}
+
+.password {
+  position: absolute;
+  width: 483px;
+  height: 76px;
+  left: 156px;
+  top: 561px;
+  color: #a09e9e;
+  background: #d9d9d9;
+  border-radius: 100px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.password:focus {
+  color: #242424;
+}
+
+.login-button button {
+  position: absolute;
+  width: 465px;
+  height: 79px;
+  left: 156.5px;
+  top: 713px;
+  background: #f9a63a;
+  border-radius: 100px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+
+.draw-container img {
+  position:unset;
+  left: 62.12%;
+  right: 18.39%;
+  top: 13.9%;
+  bottom: 61.37%;
+
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: matrix(0.9, -0.43, 0.36, 0.93, 0, 0);
+}
+
+.draw {
+  position: absolute;
+  width: 806.58px;
+  height: 850px;
+  left: 812.42px;
+  top: 250px;
+
+  background-color: #ff0000;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: skewY(-10deg);
+  background: #f9a63a;
+}
