@@ -1,28 +1,27 @@
-import React from "react";
-import "./Login.css";
-const Login = () => {
+import React from 'react'
+import "./Login.css"
+
+export const Login = () => {
   return (
     <div className="view">
-      <div className="container">
-        <div className="login-text-container">
-          <h1>Login</h1>
+        <div className="container">
+            <div className="login-text">
+                <h1>Login</h1>
+            </div>
+            <div className="inputs-login">
+                <input type="text" id='username' className='user-name' placeholder='Username:' />
+                <input type="text" id='password' className='pass-word' placeholder='Password:' />
+            </div>
+            <div className="button-login">
+                <button>Login</button>
+            </div>
         </div>
-        <div className="data-container">
-          <input type="text" id="user-name" className="username" placeholder="Username:" />
-          <input type="text" id="pass-word" className="password" placeholder="Password:" />
+        <div className="draw-container">
+            <img src="./src/assets/images/HamburguesaLogin.png" className='i1' alt="no furulo we" />
+            <img src="./src/assets/images/HamburguesaLogin.png" className='i2' alt="no furulo we" />
+            <img src="./src/assets/images/HamburguesaLogin.png" className='i3' alt="no furulo we" />
+            <img src="./src/assets/images/draw.png" className='draw' alt="no furulo we" />
         </div>
-        <div className="login-button">
-          <button>Login</button>
-        </div>
-      </div>
-      <div className="draw-container">
-        <img src="./src/assets/images/HamburguesaLogin.jpg" alt="Hamburguesa" />
-        <img src="./src/assets/images/HamburguesaLogin.jpg" alt="Hamburguesa" />
-        <img src="./src/assets/images/HamburguesaLogin.jpg" alt="Hamburguesa" />
-        <div className="draw"></div>
-      </div>
     </div>
-  );
-};
-
-export default Login;
+  )
+}
