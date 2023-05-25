@@ -20,6 +20,7 @@ const Login = () => {
             <img src="./src/assets/images/HamburguesaLogin.png" className='i1' alt="no furulo we" />
             <img src="./src/assets/images/HamburguesaLogin.png" className='i2' alt="no furulo we" />
             <img src="./src/assets/images/HamburguesaLogin.png" className='i3' alt="no furulo we" />
+            <img src="./src/assets/images/HamburguesaLogin.png" className='i4' alt="no furulo we" />
             <img src="./src/assets/images/draw.png" className='draw' alt="no furulo we" />
         </div>
     </div>

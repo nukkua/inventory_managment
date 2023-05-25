@@ -87,10 +87,9 @@
   right: 18.39%;
   top: 13.9%;
   bottom: 61.37%;
-  width: 250px;
+  width: 330px;
   height: 300px;
 
-  background: url(./src/assets/images/HamburguesaLogin.png);
   opacity: 0.4;
   transform: matrix(0.9, -0.43, 0.36, 0.93, 0, 0);
 }
@@ -101,10 +100,9 @@
   right: 29.4%;
   top: 58.02%;
   bottom: 19.52%;
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
 
-  background: url(./src/assets/images/HamburguesaLogin.png);
   opacity: 0.4;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transform: matrix(0.89, -0.46, 0.38, 0.92, 0, 0);
@@ -112,22 +110,34 @@
 
 .i3 {
   position: absolute;
-  left: 80%;
+  left: 85%;
   right: 7.34%;
   top: 47.57%;
   bottom: 29.9%;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
 
-  background: url(./src/assets/images/HamburguesaLogin.png);
   opacity: 0.4;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transform: matrix(0.88, -0.47, 0.4, 0.92, 0, 0);
 }
 
+.i4 {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: 75%;
+  right: 9.87%;
+  top: 80%;
+  bottom: 5.42%;
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: matrix(0.91, -0.41, 0.34, 0.94, 0, 0);
+}
+
 .draw {
   padding-left: 150px;
-  width: 806.58px;
+  width: 648px;
   height: 1024px;
   left: 812.42px;
   top: 5.61px;
