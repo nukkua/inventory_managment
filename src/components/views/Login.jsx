@@ -8,8 +8,18 @@ const Login = () => {
           <h1>Login</h1>
         </div>
         <div className="data-container">
-          <input type="text" id="user-name" className="username" placeholder="Username:" />
-          <input type="text" id="pass-word" className="password" placeholder="Password:" />
+          <input
+            type="text"
+            id="user-name"
+            className="username"
+            placeholder="Username:"
+          />
+          <input
+            type="text"
+            id="pass-word"
+            className="password"
+            placeholder="Password:"
+          />
         </div>
         <div className="login-button">
           <button>Login</button>
