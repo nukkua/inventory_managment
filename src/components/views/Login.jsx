@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [user, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState("");
 
@@ -13,16 +13,12 @@ const Login = () => {
       const response = await axios.post(
         "https://flask-production-fc0d.up.railway.app/login",
         {
-          username,
+          user,
           password,
         }
       );
 
-      if (response.data.success) {
-        console.log("Inicio de sesion exitoso");
-      } else {
-        setLoginError("Credenciales invalidas");
-      }
+      console.log(response.data);
     } catch (error) {
       console.log(error);
       setLoginError("Error de conexion");
@@ -51,7 +47,7 @@ const Login = () => {
             id="username"
             className="user-name"
             placeholder="Username:"
-            value={username}
+            value={user}
             onChange={(e) => setUsername(e.target.value)}
           />
           <input
