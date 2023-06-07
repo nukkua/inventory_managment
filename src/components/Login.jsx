@@ -21,7 +21,7 @@ const Login = () => {
         }
       );
       if (response.data){
-        navigate('/')
+        navigate('/dashboard')
       }
       console.log(response.data);
     } catch (error) {
@@ -34,8 +34,8 @@ const Login = () => {
     upForm();
   };
 
-  const enterKey = (event) => {
-    if (event.key === "Enter") {
+  const enterKey = () => {
+    if (Event.key == "Enter") {
       upForm();
     }
   };
