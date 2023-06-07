@@ -1,8 +1,13 @@
 .navbar-container {
-  width: 186px;
-  height: 56px;
+  width: 280px;
+  height: 900px;
 }
-.navbar-container h3{
-    margin-left: 36px;
-    font-size: 20px;
+.navbar-container h3 {
+  margin: 36px 0px 56px 0px;
+  color: #f79009;
+  margin-left: 36px;
+  font-size: 20px;
+}
+.navbar-container .last-option {
+  margin-top: 56px;
 }
