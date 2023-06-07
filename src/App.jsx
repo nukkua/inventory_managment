@@ -1,17 +1,14 @@
-import './App.css'
-import Login from './components/Login.jsx'
-import React from 'react';
-import TablaPrecio from './components/TablaPrecio'
-
+import { useState } from "react";
+import "./App.css";
+import Login from "./components/Login";
 
 function App() {
+  
   return (
     <>
       
     </>
-  )
+  );
 }
 
 export default App;
-
-
