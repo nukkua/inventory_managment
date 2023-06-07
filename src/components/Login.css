@@ -5,6 +5,7 @@
   
   .view {
     display: flex;
+    background-color: #2f3234;
     position: absolute;
     width: 1440px;
     height: 900px;
@@ -12,10 +13,10 @@
     top: 0px;
   }
   
-  .container {
+  /* .container {
     display: inline-block;
     width: 50%;
-  }
+  } */
   
   .login-text {
     position: absolute;
@@ -78,7 +79,7 @@
   }
   
   .draw-container {
-    display: flexbox;
+    display:flexbox;
     width: 50%;
   }
   .i1 {
