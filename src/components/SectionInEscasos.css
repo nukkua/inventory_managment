@@ -13,11 +13,11 @@
   font-size: 16px;
   /* margin-left: 50px;
   margin-top: 10px; */
-  left: 312px;
-  top: 140px;
+  /* left: 312px;
+  top: 140px; */
   transform: translateX(30%);
   height: 250px;
-  width: 1096px;
+  
   margin-bottom: -80px;
   background: #FFFFFF;
 }
