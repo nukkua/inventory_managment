@@ -14,6 +14,7 @@ function App() {
     <>
       <div className="app-container">
         {location.pathname !== "/login" && <NavBar />}
+        
 
         <Routes>
           <Route path="/login" element={<Login />} />
