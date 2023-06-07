@@ -1,0 +1,8 @@
+.navbar-container {
+  width: 186px;
+  height: 56px;
+}
+.navbar-container h3{
+    margin-left: 36px;
+    font-size: 20px;
+}

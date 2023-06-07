@@ -1,0 +1,14 @@
+.options-card {
+    display: flex;
+  align-items: center;
+  margin-left: 40px;
+  width: 186px;
+  height: 56px;
+}
+.options-card span {
+  margin-left: 16px;
+    font-size: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+}

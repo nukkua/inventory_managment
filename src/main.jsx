@@ -5,10 +5,12 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/Login.jsx";
 import TablaPrecio from "./components/TablaPrecio.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
+    <NavBar/>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/tablaprecio" element={<TablaPrecio />} />
