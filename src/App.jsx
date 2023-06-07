@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Login from "./components/Login.jsx";
-import TablaPrecio from "./components/TablaPrecio.jsx";
+import Platos from "./views/Platos.jsx";
 import NavBar from "./components/NavBar.jsx";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       {location.pathname !== "/login" && <NavBar />}
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/platos" element={<TablaPrecio />} />
+        <Route path="/platos" element={<Platos />} />
       </Routes>
     </>
   );

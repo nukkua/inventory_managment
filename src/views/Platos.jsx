@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button } from '@mui/material';
-import Buttons from './Buttons';
-import BotonFoot from './BotonFoot';
-import './TablaPrecio.css';
+import Buttons from '../components/Buttons';
+import BotonFoot from '../components/BotonFoot';
+import './Platos.css';
 
-const TablaPrecio = () => {
+const Platos = () => {
   const data = [
     { 
       platos: 'Papas Fritas', 
@@ -58,8 +58,8 @@ const TablaPrecio = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row) => (
-            <TableRow key={row.id}>
+          {data.map((row, index) => (
+            <TableRow key={index}>
               <TableCell className='cell-t'>{row.platos}</TableCell>
               <TableCell className='cell-t'>{row.precio}</TableCell>
               <TableCell className='cell-t'>{row.venta}</TableCell>
@@ -75,4 +75,4 @@ const TablaPrecio = () => {
   );
 }
 
-export default TablaPrecio;
+export default Platos;

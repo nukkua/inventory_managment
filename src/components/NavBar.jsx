@@ -8,36 +8,41 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <h3>TOP BURGUER</h3>
-      <OptionsCard
-        description={"Dashboard"}
-        iconName={"octicon:home-24"}
-        className={""}
-        isActive={activeOption === "Dashboard"}
-        onClick={() => setActiveOption("Dashboard")}
-      />
-      <OptionsCard
-        description={"Menu del dia"}
-        iconName={"fluent:food-16-filled"}
-        className={""}
-        isActive={activeOption === "Menu del dia"}
-        onClick={() => setActiveOption("Menu del dia")}
-      />
-      <NavLink to={"/platos"}>
+      <NavLink>
+        <OptionsCard
+          description={"Dashboard"}
+          iconName={"octicon:home-24"}
+          className={""}
+          isActive={activeOption === "Dashboard"}
+          onClick={() => setActiveOption("Dashboard")}
+        />
+      </NavLink>
+      <NavLink>
+        <OptionsCard
+          description={"Menu del dia"}
+          iconName={"fluent:food-16-filled"}
+          className={""}
+          isActive={activeOption === "Menu del dia"}
+          onClick={() => setActiveOption("Menu del dia")}
+        />
+      </NavLink>
+      <NavLink to={"/platos"} onClick={() => setActiveOption("Platos")}>
         <OptionsCard
           description={"Platos"}
           iconName={"mdi:food-outline"}
           className={""}
           isActive={activeOption === "Platos"}
-          onClick={() => setActiveOption("Platos")}
         />
       </NavLink>
-      <OptionsCard
-        description={"Ingredientes"}
-        iconName={"uil:food"}
-        className={""}
-        isActive={activeOption === "Ingredientes"}
-        onClick={() => setActiveOption("Ingredientes")}
-      />
+
+      <NavLink>
+        <OptionsCard
+          description={"Ingredientes"}
+          iconName={"uil:food"}
+          className={""}
+          isActive={activeOption === "Ingredientes"}
+        />
+      </NavLink>
       <OptionsCard
         description={"Reportes"}
         iconName={"iconoir:reports"}
