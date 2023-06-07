@@ -12,8 +12,6 @@ import {
 } from "@mui/material";
 import "./TablaPrecio.css";
 
-import React from "react";
-
 const TablaPrecio = () => {
   const data = [
     {
