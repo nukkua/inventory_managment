@@ -1,0 +1,9 @@
+.searchbar-container{
+    display: flex;
+    width: 402px;
+    height: 44px;
+    background-color: azure;
+}
+.searchbar-container input{
+    background-color: white;
+}
