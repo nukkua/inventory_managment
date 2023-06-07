@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import OptionsCard from "./OptionsCard";
+import OptionsCard from "../components/OptionsCard";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 
@@ -43,13 +43,14 @@ const NavBar = () => {
           isActive={activeOption === "Ingredientes"}
         />
       </NavLink>
-      <OptionsCard
-        description={"Reportes"}
-        iconName={"iconoir:reports"}
-        className={""}
-        isActive={activeOption === "Reportes"}
-        onClick={() => setActiveOption("Reportes")}
-      />
+      <NavLink to='/reportes' onClick={() => setActiveOption("Reportes")}>
+        <OptionsCard
+          description={"Reportes"}
+          iconName={"iconoir:reports"}
+          className={""}
+          isActive={activeOption === "Reportes"}
+        />
+      </NavLink>
       <OptionsCard
         description={"Proveedores"}
         iconName={"ant-design:user-outlined"}

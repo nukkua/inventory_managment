@@ -2,11 +2,14 @@ import React from "react";
 import "./Login.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [user, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState("");
+
+  const navigate = useNavigate();
 
   const upForm = async () => {
     try {
@@ -17,7 +20,9 @@ const Login = () => {
           password,
         }
       );
-
+      if (response.data){
+        navigate('/')
+      }
       console.log(response.data);
     } catch (error) {
       console.log(error);
@@ -29,8 +34,8 @@ const Login = () => {
     upForm();
   };
 
-  const enterKey = () => {
-    if (Event.key == "Enter") {
+  const enterKey = (event) => {
+    if (event.key === "Enter") {
       upForm();
     }
   };
@@ -41,7 +46,8 @@ const Login = () => {
         <div className="login-text">
           <h1>Login</h1>
         </div>
-        <div className="inputs-login">
+        <
+          div className="inputs-login">
           <input
             type="text"
             id="username"
