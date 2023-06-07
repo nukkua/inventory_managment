@@ -13,8 +13,7 @@ function App() {
       {location.pathname !== "/login" && <NavBar />}
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/tablaprecio" element={<TablaPrecio />} />
-        <Route />
+        <Route path="/platos" element={<TablaPrecio />} />
       </Routes>
     </>
   );

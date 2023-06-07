@@ -20,42 +20,44 @@ const NavBar = () => {
         iconName={"fluent:food-16-filled"}
         className={""}
         isActive={activeOption === "Menu del dia"}
-          onClick={() => setActiveOption("Menu del dia")}
+        onClick={() => setActiveOption("Menu del dia")}
       />
-      <OptionsCard
-        description={"Platos"}
-        iconName={"mdi:food-outline"}
-        className={""}
-        isActive={activeOption === "Platos"}
+      <NavLink to={"/platos"}>
+        <OptionsCard
+          description={"Platos"}
+          iconName={"mdi:food-outline"}
+          className={""}
+          isActive={activeOption === "Platos"}
           onClick={() => setActiveOption("Platos")}
-      />
+        />
+      </NavLink>
       <OptionsCard
         description={"Ingredientes"}
         iconName={"uil:food"}
         className={""}
         isActive={activeOption === "Ingredientes"}
-          onClick={() => setActiveOption("Ingredientes")}
+        onClick={() => setActiveOption("Ingredientes")}
       />
       <OptionsCard
         description={"Reportes"}
         iconName={"iconoir:reports"}
         className={""}
         isActive={activeOption === "Reportes"}
-          onClick={() => setActiveOption("Reportes")}
+        onClick={() => setActiveOption("Reportes")}
       />
       <OptionsCard
         description={"Proveedores"}
         iconName={"ant-design:user-outlined"}
         className={""}
         isActive={activeOption === "Proveedores"}
-          onClick={() => setActiveOption("Proveedores")}
+        onClick={() => setActiveOption("Proveedores")}
       />
       <OptionsCard
         description={"Ordenes"}
         iconName={"ph:package-light"}
         className={""}
         isActive={activeOption === "Ordenes"}
-          onClick={() => setActiveOption("Ordenes")}
+        onClick={() => setActiveOption("Ordenes")}
       />
       <NavLink to={"/login"}>
         <OptionsCard
