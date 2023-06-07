@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button } from '@mui/material';
 import Buttons from './Buttons';
 import BotonFoot from './BotonFoot';
@@ -44,17 +43,7 @@ const TablaPrecio = () => {
 
   return (
     <TableContainer component={Paper} className="container">
-      <div className='boton'>
-        <Button variant="outlined" color="primary" sx={{color: '#667085', borderColor: '#F79009', fontSize: '10px'}}>
-          descargar todo
-        </Button>  
-      </div>
-      <div className='boton-filter'>
-      <Button variant="outlined" color="primary" sx={{color: '#667085', borderColor: '#F79009', fontSize: '10px'}}>
-          <DehazeIcon/>
-          Filter
-        </Button>
-      </div>
+      <Buttons/>
       <div className='titulo'>Platos</div>
       <Table className='tabla-container'>
         <TableHead>
@@ -80,23 +69,8 @@ const TablaPrecio = () => {
             </TableRow>
           ))}
         </TableBody>
-        <tfoot>
-          <tr>
-           <td colspan="3">
-                <div className='boton-2'>
-                  <Button variant="outlined" color="primary" sx={{color: '#667085', borderColor: '#F79009', fontSize: '10px'}}>
-                    Anterior    
-                  </Button>
-                </div>
-                <div className='boton-3'>
-                  <Button variant="outlined" color="primary" sx={{color: '#667085', borderColor: '#F79009', fontSize: '10px'}}>
-                   Siguiente
-                  </Button>
-                </div>
-            </td>
-          </tr>
-        </tfoot>
       </Table>
+      <BotonFoot/>
     </TableContainer>
   );
 }
