@@ -10,8 +10,10 @@
   padding-left: 80px;
 }
 .container{
+  width: 196px;
+  height: 664px;
   font-size: 16px;
-  margin-left: 0%;
+  margin-left: 0px;
   margin-top: 10%;
   transform: translateX(30%);
 }

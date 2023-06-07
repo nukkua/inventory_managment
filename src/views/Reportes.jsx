@@ -6,8 +6,8 @@ import "./Reportes.css";
 const Reportes = () => {
   return (
     <div className="contenedor">
-      <SectionInEscasos/>
-      <SectionInMasVendidos/>
+      <SectionInMasVendidos />
+      <SectionInEscasos />
     </div>
   );
 };

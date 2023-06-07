@@ -18,7 +18,6 @@
   transform: translateX(30%);
   height: 250px;
   width: 1096px;
-  margin-bottom: 36px;
   background: #FFFFFF;
 }
 .cell-t{
@@ -35,7 +34,7 @@
   height: 30px;
   /* left: 12px;
   top: 20px;  */
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 20px;
 }
 
