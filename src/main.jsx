@@ -1,18 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Login } from './components/Login.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./components/Login.jsx";
+import TablaPrecio from "./components/TablaPrecio.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login/>}/>
-        <Route/>
-        <Route/>
+        <Route path="/login" element={<Login />} />
+        <Route path="/tablaprecio" element={<TablaPrecio />} />
+        <Route />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
