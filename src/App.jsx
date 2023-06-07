@@ -14,17 +14,18 @@ function App() {
     <>
       <div className="app-container">
         {location.pathname !== "/login" && <NavBar />}
-        
-
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element />
-          <Route path="/platos" element={<Platos />} />
-          <Route path="/ingredientes" element />
-          <Route path="/reportes" element={<Reportes />} />
-          <Route path="/proveedores" element />
-          <Route path="/ordenes" element />
-        </Routes>
+        <div className="app-content">
+          {location.pathname !== "/login" && <SearchBar />}
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/dashboard" element />
+            <Route path="/platos" element={<Platos />} />
+            <Route path="/ingredientes" element />
+            <Route path="/reportes" element={<Reportes />} />
+            <Route path="/proveedores" element />
+            <Route path="/ordenes" element />
+          </Routes>
+        </div>
       </div>
     </>
   );

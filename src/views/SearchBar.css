@@ -1,9 +1,19 @@
-.searchbar-container{
-    display: flex;
-    width: 402px;
-    height: 44px;
-    background-color: azure;
+.searchbar-container {
+  margin-left: 31px;
+  display: flex;
+  width: 402px;
+  height: 44px;
+  background-color: azure;
 }
-.searchbar-container input{
-    background-color: white;
+.searchbar-container .icon{
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+}
+.searchbar-container input {
+    border: none;
+  width: 402px;
+  height: 44px;
+  background-color: white;
+  margin-right: 20px;
 }
