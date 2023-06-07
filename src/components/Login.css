@@ -1,75 +1,63 @@
-body {
+:root {
+  --font_inter: "Inter", sans-serif;
+  --font_roboto: "Roboto", sans-serif;
+}
+
+.view {
+  display: flex;
   position: absolute;
   width: 1440px;
   height: 1024px;
   left: 0px;
   top: 0px;
-  margin: 0;
-  padding: 0;
 }
 
-.view{
-  display: flex;
+.container {
+  display: inline-block;
+  width: 50%;
 }
 
-.login-text-container h1 {
+.login-text {
   position: absolute;
   width: 421px;
   height: 149px;
-  left: 275px;
+  left: 187px;
   top: 150px;
-  font-style: normal;
+}
+
+.login-text h1 {
+  display: flexbox;
+  font-family: var(--font_inter);
   font-weight: 700;
   font-size: 96px;
   line-height: 116px;
-  display: flex;
   align-items: center;
   text-align: center;
 }
 
-.username {
-  display: flex;
-  flex-direction: column;
+.user-name {
   position: absolute;
   width: 484px;
   height: 83px;
   left: 156px;
   top: 406px;
-  color: #a09e9e;
-  background: #d9d9d9;
+  font-size: 25px;
   border-radius: 100px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 22px;
+  background-color: #d9d9d9;
 }
 
-.username:focus {
-  color: #242424;
-}
-
-.password {
+.pass-word {
   position: absolute;
   width: 483px;
   height: 76px;
   left: 156px;
   top: 561px;
-  color: #a09e9e;
-  background: #d9d9d9;
+  font-size: 25px;
   border-radius: 100px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 22px;
+  background-color: #d9d9d9;
 }
 
-.password:focus {
-  color: #242424;
-}
-
-.login-button button {
+.button-login button {
   position: absolute;
   width: 465px;
   height: 79px;
@@ -77,39 +65,80 @@ body {
   top: 713px;
   background: #f9a63a;
   border-radius: 100px;
-  font-family: "Roboto";
+  font-family: var(--font_roboto);
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 32px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
 }
 
 .draw-container {
-  position: absolute;
-  background-color: aqua;
+  display: flexbox;
+  width: 50%;
 }
-
-.draw-container img {
+.i1 {
   position: absolute;
-  left: 852px;
+  left: 62.12%;
   right: 18.39%;
   top: 13.9%;
   bottom: 61.37%;
+  width: 330px;
+  height: 300px;
 
   opacity: 0.4;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transform: matrix(0.9, -0.43, 0.36, 0.93, 0, 0);
 }
 
-.draw {
+.i2 {
   position: absolute;
-  width: 806.58px;
-  height: 850px;
-  left: 812.42px;
-  top: 250px;
+  left: 52.81%;
+  right: 29.4%;
+  top: 58.02%;
+  bottom: 19.52%;
+  width: 230px;
+  height: 230px;
 
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  transform: skewY(-10deg);
-  background: #f9a63a;
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: matrix(0.89, -0.46, 0.38, 0.92, 0, 0);
+}
+
+.i3 {
+  position: absolute;
+  left: 85%;
+  right: 7.34%;
+  top: 47.57%;
+  bottom: 29.9%;
+  width: 250px;
+  height: 250px;
+
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: matrix(0.88, -0.47, 0.4, 0.92, 0, 0);
+}
+
+.i4 {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: 75%;
+  right: 9.87%;
+  top: 80%;
+  bottom: 5.42%;
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: matrix(0.91, -0.41, 0.34, 0.94, 0, 0);
+}
+
+.draw {
+  padding-left: 150px;
+  width: 648px;
+  height: 1024px;
+  left: 812.42px;
+  top: 5.61px;
 }
