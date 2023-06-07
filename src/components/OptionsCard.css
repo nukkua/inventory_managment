@@ -9,7 +9,8 @@
   color: #f79009;
 }
 .options-card span {
-  color: white;
+
+  color:#333333;
   margin-left: 16px;
   font-size: 16px;
   font-family: "Inter";
@@ -31,7 +32,7 @@
   color: #f79009;
 }
 .options-card-last-option span {
-  color: white;
+  color: #333333;
   margin-left: 16px;
   font-size: 16px;
   font-family: "Inter";
