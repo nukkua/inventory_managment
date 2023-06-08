@@ -5,7 +5,7 @@ import "./Reportes.css";
 
 const Reportes = () => {
   return (
-    <div className="contenedor">
+    <div className="reports-container">
       <SectionInMasVendidos />
       <SectionInEscasos />
     </div>
