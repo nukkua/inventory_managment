@@ -18,10 +18,8 @@
   display: flex; 
   flex-direction: row;
   width: 1440px;
-  height: 900px;
 }
 .app-content {
   display: flex; 
   flex-direction: column;
-  width: 1160px;
 }
