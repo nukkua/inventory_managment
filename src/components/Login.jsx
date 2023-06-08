@@ -2,11 +2,14 @@ import React from "react";
 import "./Login.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [user, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState("");
+
+  const navigate = useNavigate();
 
   const upForm = async () => {
     try {
@@ -17,7 +20,9 @@ const Login = () => {
           password,
         }
       );
-
+      if (response.data){
+        navigate('/dashboard')
+      }
       console.log(response.data);
     } catch (error) {
       console.log(error);
@@ -29,15 +34,15 @@ const Login = () => {
     upForm();
   };
 
-  const enterKey = () => {
-    if (Event.key == "Enter") {
+  const enterKey = (event) => {
+    if (event.key === "Enter") {
       upForm();
     }
   };
 
   return (
     <div className="view">
-      <div className="container">
+      <div className="container-login">
         <div className="login-text">
           <h1>Login</h1>
         </div>
@@ -85,10 +90,7 @@ const Login = () => {
           className="i4"
           alt="no furulo we"
         />
-        <img
-          src="./src/assets/images/draw.png"
-          className="draw"
-          alt="no furulo we"
+        <img src="./src/assets/images/draw.png" className="draw" alt="no furulo we"
         />
       </div>
     </div>

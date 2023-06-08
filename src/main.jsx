@@ -2,18 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./components/Login.jsx";
-import TablaPrecio from "./components/TablaPrecio.jsx";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/tablaprecio" element={<TablaPrecio />} />
-        <Route />
-      </Routes>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
