@@ -7,15 +7,18 @@ import Platos from "./views/Platos.jsx";
 import NavBar from "./views/NavBar.jsx";
 import Reportes from "./views/Reportes";
 import SearchBarContainer from "./views/SearchBarContainer";
+import NotFound from "./views/NotFound";
 
 function App() {
   const location = useLocation();
+  const notLoginPage = location.pathname !== "/login";
+
   return (
     <>
       <div className="app-container">
-        {location.pathname !== "/login" && <NavBar />}
+        {notLoginPage && <NavBar />}
         <div className="app-content">
-          {location.pathname !== "/login" && <SearchBarContainer/>}
+          {notLoginPage && <SearchBarContainer />}
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element />
@@ -24,6 +27,7 @@ function App() {
             <Route path="/reportes" element={<Reportes />} />
             <Route path="/proveedores" element />
             <Route path="/ordenes" element />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
