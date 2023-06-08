@@ -1,11 +1,12 @@
 .table-container-main {
+    color: white;
     margin-top: 20px;
     width: 1080px;
     height: 310px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-color: #f8f9fa;  /* Asegúrate de que el fondo no sea blanco para que se pueda ver la línea blanca */
+    background-color: black;  /* Asegúrate de que el fondo no sea blanco para que se pueda ver la línea blanca */
   }
   
   .table-container-main h3{
