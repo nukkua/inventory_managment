@@ -1,7 +1,7 @@
 import React from "react";
 import "./TableItems.css";
 
-const Table = ({ users, title }) => {
+const Table = ({ data, columns, title }) => {
   return (
     <div className="table-container-main">
       <h3>{title}</h3>
@@ -9,17 +9,17 @@ const Table = ({ users, title }) => {
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Age</th>
+              {columns.map((column, index) => (
+                <th key={index}>{column.header}</th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            {users.map((user) => (
-              <tr className="table-row" key={user.id}>
-                <td>{user.name}</td>
-                <td>{user.email}</td>
-                <td>{user.age}</td>
+            {data.map((item, index) => (
+              <tr className="table-row" key={index}>
+                {columns.map((column) => (
+                  <td key={column.accessor}>{item[column.accessor]}</td>
+                ))}
               </tr>
             ))}
           </tbody>

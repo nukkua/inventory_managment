@@ -1,6 +1,6 @@
 import React from "react";
-import './IngredientesEscasos.css'
-import TableItems from './TableItems';
+import "./IngredientesEscasos.css";
+import TableItems from "./TableItems";
 
 const IngredientesEscasos = () => {
   const users = [
@@ -10,7 +10,15 @@ const IngredientesEscasos = () => {
   ];
   return (
     <div className="ingredientesescasos-container">
-      <TableItems users={users} title={"Ingredientes Escasos"} />
+      <TableItems
+        title="Ingredientes Escasos"
+        data={users}
+        columns={[
+          { header: "Name", accessor: "name" },
+          { header: "Email", accessor: "email" },
+          { header: "Age", accessor: "age" },
+        ]}
+      />
     </div>
   );
 };
