@@ -1,5 +1,5 @@
 .navbar-container {
-  margin: -6px 0px 0px -6px;
+  margin: -6px 2px 0px -6px;
   width: 280px;
   height: 900px;
   background-color:rgb(240, 241, 243);
@@ -13,3 +13,7 @@
 .navbar-container .last-option {
   margin-top: 56px;
 }
+a {
+  text-decoration: none;
+}
+
