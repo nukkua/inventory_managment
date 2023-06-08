@@ -27,7 +27,7 @@ const SectionInEscasos = () => {
     },
   ];
   return (
-    <TableContainer style={{ width: '1160px' }}component={Paper} className="table-container">
+    <TableContainer component={Paper} className="container">
       <Boton />
       <div className="titulo">Ingredientes escasos</div>
       <Table className="tabla-container">

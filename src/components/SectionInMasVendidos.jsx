@@ -26,7 +26,7 @@ const SectionInMasVendidos = () => {
     },
   ];
   return (
-    <TableContainer style={{ width: '100%' }}component={Paper} className="table-container">
+    <TableContainer component={Paper} className="table-container">
       <Boton />
       <div className="titulo">Platos mas vendidos</div>
       <Table className="tabla-container">
