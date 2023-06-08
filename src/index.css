@@ -8,12 +8,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+  padding: 0;
+  margin: 0;
   
 }
 .app-container {
   display: flex; 
   flex-direction: row;
   width: 1440px;
-  
+  height: 900;
 }

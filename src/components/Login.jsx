@@ -42,12 +42,11 @@ const Login = () => {
 
   return (
     <div className="view">
-      <div className="container">
+      <div className="container-login">
         <div className="login-text">
           <h1>Login</h1>
         </div>
-        <
-          div className="inputs-login">
+        <div className="inputs-login">
           <input
             type="text"
             id="username"
@@ -91,10 +90,7 @@ const Login = () => {
           className="i4"
           alt="no furulo we"
         />
-        <img
-          src="./src/assets/images/draw.png"
-          className="draw"
-          alt="no furulo we"
+        <img src="./src/assets/images/draw.png" className="draw" alt="no furulo we"
         />
       </div>
     </div>
