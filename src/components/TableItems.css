@@ -1,0 +1,34 @@
+.table-container-main {
+    margin-top: 20px;
+    width: 1080px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f8f9fa;  /* Asegúrate de que el fondo no sea blanco para que se pueda ver la línea blanca */
+  }
+  
+  .table-container-main h3{
+    margin-left: 12px;
+  }
+  
+  .table-container-main table {
+    margin-left: 12px;
+    width: 100%;
+    border-collapse: collapse;  /* Asegúrate de que no haya espacio entre las celdas de la tabla */
+  }
+  
+  .table-container-main th, .table-container-main td {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .table-container-main .table-row {
+    border-bottom: 2px solid white;  /* Línea blanca debajo de cada fila */
+  }
+  
+  /* Si quieres agregar un poco de espacio entre las filas, puedes hacerlo con la propiedad padding */
+  .table-container-main .table-row td {
+    padding: 10px 0;
+  }
+  
