@@ -3,7 +3,7 @@
   display: flex;
   width: 402px;
   height: 44px;
-  background-color: white;
+  background-color: black;
 }
 .searchbar-container .icon {
   color: #f79009;
@@ -14,5 +14,5 @@
 .searchbar-container input {
   border: none;
   width: 402px;
-  background-color: white;
+  background-color: black;
 }
