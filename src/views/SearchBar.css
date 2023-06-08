@@ -1,19 +1,18 @@
 .searchbar-container {
-  margin-left: 31px;
+  margin: 20px 0px 0px 31px;
   display: flex;
   width: 402px;
   height: 44px;
-  background-color: azure;
+  background-color: rgb(240, 241, 243);
 }
-.searchbar-container .icon{
-    width: 24px;
-    height: 24px;
-    margin-top: 12px;
+.searchbar-container .icon {
+  color: #f79009;
+  width: 24px;
+  height: 24px;
+  margin: 12px 10px 0px 5px;
 }
 .searchbar-container input {
-    border: none;
+  border: none;
   width: 402px;
-  height: 44px;
-  background-color: white;
-  margin-right: 20px;
+  background-color: rgb(240, 241, 243);
 }
