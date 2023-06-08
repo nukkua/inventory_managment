@@ -8,6 +8,7 @@ import NavBar from "./views/NavBar.jsx";
 import Reportes from "./views/Reportes";
 import SearchBarContainer from "./views/SearchBarContainer";
 import NotFound from "./views/NotFound";
+import AddProvCard from "./components/AddProvCard";
 
 function App() {
   const location = useLocation();
@@ -15,13 +16,14 @@ function App() {
 
   return (
     <>
-      <div className="app-container">
+      {/* <div className="app-container">
         {notLoginPage && <NavBar />}
         <div className="app-content">
           {notLoginPage && <SearchBarContainer />}
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element />
+            <Route path="/menudeldia" element />
             <Route path="/platos" element={<Platos />} />
             <Route path="/ingredientes" element />
             <Route path="/reportes" element={<Reportes />} />
@@ -30,7 +32,8 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-      </div>
+      </div> */}
+      <AddProvCard/>
     </>
   );
 }
