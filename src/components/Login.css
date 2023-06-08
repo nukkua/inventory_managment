@@ -97,12 +97,13 @@ body {
   background-color: #f9a63a;
   border: none;
   border-radius: 100px;
+
 }
 
 .draw-container {
   display: flex;
   position: relative;
-  left: 80px;
+  left: 95.1px;
   padding: 0;
   margin: 0;
   width: 720px;
