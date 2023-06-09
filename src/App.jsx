@@ -10,6 +10,7 @@ import SearchBarContainer from "./views/SearchBarContainer";
 import NotFound from "./views/NotFound";
 import Ingredientes from "./views/Ingredientes";
 import MenuDelDia from "./views/MenuDelDia";
+import Ordenes from "./views/Ordenes";
 
 function App() {
   const location = useLocation();
@@ -29,7 +30,7 @@ function App() {
             <Route path="/ingredientes" element= {<Ingredientes/>} />
             <Route path="/reportes" element={<Reportes />} />
             <Route path="/proveedores" element />
-            <Route path="/ordenes" element />
+            <Route path="/ordenes" element={<Ordenes/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
