@@ -33,7 +33,7 @@ function App() {
           </Routes>
         </div>
       </div> */}
-      <AddProvCard/>
+      <AddProvCard />
     </>
   );
 }
