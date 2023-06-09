@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getJson } from "../services/Response";
 import TableItems from "../components/TableItems";
+import "./Ingredientes.css"
 
 const Ingredientes = () => {
   const [ingredientes, setIngredientes] = useState([]);
