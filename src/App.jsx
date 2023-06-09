@@ -8,6 +8,7 @@ import NavBar from "./views/NavBar.jsx";
 import Reportes from "./views/Reportes";
 import SearchBarContainer from "./views/SearchBarContainer";
 import NotFound from "./views/NotFound";
+import Ingredientes from "./views/Ingredientes";
 
 function App() {
   const location = useLocation();
@@ -24,7 +25,7 @@ function App() {
             <Route path="/dashboard" element />
             <Route path="/menudeldia" element />
             <Route path="/platos" element={<Platos />} />
-            <Route path="/ingredientes" element />
+            <Route path="/ingredientes" element= {<Ingredientes/>} />
             <Route path="/reportes" element={<Reportes />} />
             <Route path="/proveedores" element />
             <Route path="/ordenes" element />
