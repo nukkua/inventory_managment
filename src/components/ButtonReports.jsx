@@ -8,8 +8,8 @@ const ButtonReports = () => {
         color: "#F79009",
         fontSize: "14px",
         height: "17px",
-        left: "850px",
-        top: "26px",
+        left: "950px",
+        top: "5px",
         backgroundColor: "transparent",
         boxShadow: "none",
         // focus y active son como selectores el focus cuando se hace un acercamiento hacia el boton

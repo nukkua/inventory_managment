@@ -6,8 +6,9 @@
   /* left: 312px;
   top: 140px; */
   transform: translateX(30%);
-  height: 250px;
+  height: 310px !important;
   margin-top: 40px !important;
+  padding-top: 20px !important;
   margin-left: -300px !important;
   background: #FFFFFF;
 }
