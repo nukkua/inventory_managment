@@ -1,13 +1,13 @@
 import React from "react";
-import SectionInEscasos from "../components/SectionInEscasos";
-import SectionInMasVendidos from "../components/SectionInMasVendidos";
 import "./Reportes.css";
+import PlatosMasVendidos from "../components/PlatosMasVendidos";
+import IngredientesEscasos from "../components/IngredientesEscasos";
 
 const Reportes = () => {
   return (
     <div className="reports-container">
-      <SectionInMasVendidos />
-      <SectionInEscasos />
+      <PlatosMasVendidos/>
+      <IngredientesEscasos/>
     </div>
   );
 };
