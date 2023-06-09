@@ -3,6 +3,7 @@
     height: 188px;
     background-color:  #272727;
     margin: 0px 0px 14px 0px;
+    border-radius: 8px;
 }
 .ordenesgenerales-container h3{
     margin-left: 16px;
