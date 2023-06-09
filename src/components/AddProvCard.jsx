@@ -1,6 +1,7 @@
 import React from "react";
 import "./AddProvCard.css";
 import { InputInfoProv } from "./InputInfoProv";
+import { ButtonReu } from "./ButtonReu";
 
 const AddProvCard = (props) => {
   return (
@@ -19,6 +20,12 @@ const AddProvCard = (props) => {
           <InputInfoProv titulo="Ingrediente" placeholder="Ingrese Ingrediente"/>
           <InputInfoProv titulo="Numero de contacto" placeholder="Ingrese numero de contacto"/>
           <InputInfoProv titulo="Direccion" placeholder="Ingrese la direccion emial"/>
+        </div>
+        <div className="buttons-prov">
+          <ButtonReu nombre="Agregar Proveedor"/>
+          <button className="descat-button">
+              Descartar
+          </button>
         </div>
       </div>
     </div>

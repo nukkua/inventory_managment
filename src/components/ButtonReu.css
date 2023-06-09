@@ -1,0 +1,20 @@
+.button-reu {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  width: 159px;
+  height: 40px;
+  left: 291px;
+  top: 190px;
+  background: #f79009;
+  border-radius: 4px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
