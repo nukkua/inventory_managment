@@ -12,15 +12,10 @@ const PlatosMasVendidos = () => {
     });
   }, []);
 
-  const users = [
-    { id: 1, name: "John Doe", email: "john@example.com", age: 27 },
-    { id: 2, name: "Jane Doe", email: "jane@example.com", age: 25 },
-    // Más usuarios aquí...
-  ];
   return (
     <div className="platosmasvendidos-container">
       <TableItems
-        title="Empleados"
+        title="Platos mas vendidos"
         data={empleados}
         columns={[
           { header: "Contrasena", accessor: "contrasena" },
