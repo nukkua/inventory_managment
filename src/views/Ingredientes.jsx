@@ -10,6 +10,7 @@ const Ingredientes = () => {
       setIngredientes(data);
     });
   }, []);
+  
   return (
     <div className="ingredientes-container">
       <TableItems
