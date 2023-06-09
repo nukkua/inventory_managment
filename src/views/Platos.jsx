@@ -42,7 +42,7 @@ const Platos = () => {
  
 
   return (
-    <TableContainer component={Paper} className="container">
+    <TableContainer component={Paper} className="cont">
       <Buttons/>
       <div className='titulo'>Platos</div>
       <Table className='tabla-container'>

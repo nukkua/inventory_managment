@@ -1,31 +1,31 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap);
 .cabecera{
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #667085;
-  border-right: 50px;
-  padding-left: 80px;
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #667085 !important;
+  border-right: 50px !important;
+  padding-left: 80px !important;
 }
-.container{
+.cont{
   width: 196px;
   height: 664px;
   font-size: 16px;
-  margin-left: 0px;
-  margin-top: 10%;
+  margin-left: -290px;
+  margin-top: 10px;
   transform: translateX(30%);
 }
 .cell-t{
-  color: #667085;
-  font-family: 'Inter', sans-serif;
-  padding-left: 80px;
+  color: #667085 !important;
+  font-family: 'Inter', sans-serif !important;
+  padding-left: 80px !important;
 }
 .titulo{
-  color: #383E49;
-  padding-left: 15px;
-  margin-bottom: 30px;
+  color: #383E49 !important;
+  padding-left: 15px !important;
+  margin-bottom: 30px !important;
 }
 .boton{
     margin-left: 80%;

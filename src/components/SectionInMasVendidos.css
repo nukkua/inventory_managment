@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap);
 .cabecera{
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #667085;
-  border-right: 50px;
-  padding-left: 80px;
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #667085 !important;
+  border-right: 50px !important;
+  padding-left: 80px !important;
 }
 .table-container{
   font-size: 16px;
@@ -17,25 +17,26 @@
   top: 140px; */
   transform: translateX(30%);
   height: 250px;
-
+  margin-top: 30px !important;
+  margin-left: -300px !important;
   background: #FFFFFF;
 }
 .cell-t{
-  color: #667085;
-  font-family: 'Inter', sans-serif;
-  padding-left: 80px;
-  margin-bottom: 50px;
+  color: #667085 !important;
+  font-family: 'Inter', sans-serif !important;
+  padding-left: 80px !important;
+  margin-bottom: 50px !important;
 }
 .titulo{
-  color: #383E49;
+  color: #383E49 !important;
 /*   padding-left: 15px;
   margin-bottom: 30px;  */
-  width: 198px;
-  height: 30px;
+  width: 198px !important;
+  height: 30px !important;
   /* left: 12px;
   top: 20px;  */
-  font-size: 18px;
-  padding-left: 20px;
+  font-size: 18px !important;
+  padding-left: 20px !important;
 }
 
 .tabla-container{
