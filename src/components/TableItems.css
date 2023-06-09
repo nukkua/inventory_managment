@@ -14,10 +14,10 @@
   height: 310px; /* Mueve la altura aquí */
   overflow: auto; 
   width: 100%;
-  margin-left: 12px;
+  margin-left: 10px;
 }
 .table-container-main h3 {
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .table-container-main table {
@@ -29,7 +29,7 @@
 .table-container-main th,
 .table-container-main td {
   padding: 1em;
-  text-align: center;
+  text-align:left;
 }
 
 .table-container-main .table-row {
