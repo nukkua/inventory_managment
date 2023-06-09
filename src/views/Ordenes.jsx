@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TableItems from "../components/TableItems";
 import { getJson } from "../services/Response";
 import "./Ordenes.css"
+import OrdenesGeneralesContainer from "../components/OrdenesGeneralesContainer";
 
 const Ordenes = () => {
   const [ordenes, setOrdenes] = useState([]);
@@ -12,6 +13,7 @@ const Ordenes = () => {
   });
   return (
     <div className="ordenes-container">
+        <OrdenesGeneralesContainer/>
       <TableItems
         title="Ordenes"
         data={ordenes}
