@@ -10,7 +10,7 @@ const Ordenes = () => {
     getJson("/platos").then((data) => {
       setOrdenes(data);
     });
-  });
+  },[]);
   return (
     <div className="ordenes-container">
         <OrdenesGeneralesContainer/>
